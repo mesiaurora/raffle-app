@@ -1,0 +1,95 @@
+
+/* HTML elements */
+body {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+/* Insta feed */
+.Loading {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #444; /* Blue */
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  animation: spin 2s linear infinite;
+}
+
+.Feed {
+  margin: 1% 1%;
+}
+
+.Feed a img {
+  margin: 1% 1%;
+  width: 23%;
+  float: left;
+}
+
+
+/* Colours */
+.colour-primary {
+  background-color: rgba(133, 15, 154);
+  color: rgba(255, 255, 255);
+}
+
+.colour-secondary {
+  background-color: rgba(18, 92, 99);
+  color: rgba(255, 255, 255);
+}
+
+/* Titles */
+h1 {
+  font-family: 'Copperplate';
+  color: rgba(97, 10, 113);
+}
+
+h2 {
+  font-family: 'Copperplate';
+  color: rgba(97, 10, 113);
+}
+
+h3 {
+  font-family: 'Copperplate';
+  color: rgba(18, 91, 99);
+}
+
+h4 {
+  font-family: 'Copperplate';
+  color: rgba(97, 10, 113);
+}
+
+h5 {
+  font-family: 'Copperplate';
+  color: rgba(18, 91, 99);
+}
+
+/* Text styles */
+.text-style-header {
+  font-size: 1.3vw;
+  font-family: 'Copperplate';
+  color: rgba(255, 255, 255);
+}
+
+.text-style-footer {
+  font-size: 1.1vw;
+  font-family: 'Copperplate';
+  color: rgba(255, 255, 255);
+}
+
+.text-style-content {
+  font-size: 19px;
+  font-family: 'Bookman';
+  color: rgba(97, 10, 113);
+
+}
+
+.text-style-tiny {
+  font-size: 15px;
+  font-family: 'Copperplate';
+  color: rgba(255, 255, 255);
+}
+
+.buttonTurquoise {
+  background-color: rgba(255, 255, 255);
+}
