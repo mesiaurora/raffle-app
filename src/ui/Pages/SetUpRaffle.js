@@ -9,12 +9,18 @@ import { Container, Col, Row} from 'react-bootstrap'
 
 function SetUpRaffle() {
   const containsAlert = ' is already added. Name needs to be unique'
-  const [persons, setPersons] = useState([{ id: 1, name: 'name', numberOfEntries: '2'},{name: 'name2', numberOfEntries:'3'}])
+  const [persons, setPersons] = useState(
+    [
+      { id: 1, name: 'name', numberOfEntries: '2', winner: false},
+      { id: 2, name: 'name2', numberOfEntries:'3', winner: false}
+    ])
   const [newName, setNewName ] = useState('')
   const [newNumber, setNewNumber] = useState('')
 
   /*
     TODO: Raffle settings and submit button
+    TODO: figure out id's for people
+    TODO: useLayoutEffect to show winner
   */
 
 

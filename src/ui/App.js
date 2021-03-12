@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React, { useState } from 'react';
 import Header from './PageComponents/Header';
 import Footer from './PageComponents/Footer';
 import SetUpRaffle from './Pages/SetUpRaffle';
@@ -8,6 +9,9 @@ import './Styles/styles.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
+
+  const [winners, setWinners] = useState([])
+
   return (
     <div className='container'>
       <BrowserRouter>
