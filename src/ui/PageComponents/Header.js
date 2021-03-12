@@ -1,11 +1,7 @@
 import { Navbar, Nav, NavLink, Form, Button, FormControl } from 'react-bootstrap';
 import '../Styles/styles.css'
 
-
-
 const Header = () => {
-
-
   return (
     <div className="fixed-top colour-primary text-style-header">
       <Navbar variant="dark">
@@ -20,7 +16,6 @@ const Header = () => {
           <Nav.Link href="results">Results</Nav.Link>
         </Nav.Item>
         </Nav>
-
         <Nav className="ml-auto">
           <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
@@ -28,7 +23,6 @@ const Header = () => {
           </Form>
         </Nav>
       </Navbar>
-
     </div>
   )
 }

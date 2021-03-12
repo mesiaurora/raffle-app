@@ -13,23 +13,22 @@ function SetUpRaffle() {
   const [newName, setNewName ] = useState('')
   const [newNumber, setNewNumber] = useState('')
 
-    const handleSubmit = e => {
-      e.preventDefault()
+  const handleSubmit = e => {
+    e.preventDefault()
 
-      const newPerson = {
-        name: newName,
-        number: newNumber,
-      }
-
-      setPersons(persons.concat(newPerson))
-      setNewName('')
-      setNewNumber('')
+    const newPerson = {
+      name: newName,
+      number: newNumber,
     }
+
+    setPersons(persons.concat(newPerson))
+    setNewName('')
+    setNewNumber('')
+  }
 
   return (
     <div className='container'>
       <Container>
-
         <RaffleWheel persons={persons}/>
       <Row>
         <Col sm={6}>
@@ -40,10 +39,9 @@ function SetUpRaffle() {
       <Row>
         <Col sm={6}>
           <h3>Add new person and number of entries</h3>
-          <InsertPeople name={newName} newNameMethod={e => setNewName({newName}, e.target.value)}
-          number={newNumber}
-          newNumberMethod={e => setNewNumber({newNumber}, e.target.value)}
-          onSubmit={handleSubmit}/>
+          <InsertPeople name={newName} newNameMethod={e => setNewName(e.target.value)}
+          number={newNumber} newNumberMethod={e => setNewNumber(e.target.value)}
+          handleSubmit={handleSubmit}/>
         </Col>
         <Col sm={6}>
           <h3>Already added people</h3>

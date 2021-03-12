@@ -18,7 +18,6 @@ function App() {
 
   return (
     <div className='container'>
-
       <BrowserRouter>
         <Header />
         <Switch>

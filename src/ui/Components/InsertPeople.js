@@ -1,4 +1,3 @@
-import InsertPeopleForm from '../Components/InsertPeopleForm'
 import { Form, Button, FormControl, FormLabel, FormGroup} from 'react-bootstrap'
 import '../Styles/styles.css'
 
@@ -10,7 +9,7 @@ const InsertPeople = (props) => {
 
   return (
     <div>
-      <Form>
+      <form onSubmit={handleSubmit}>
         <FormGroup controlId="newName">
           <FormLabel className='text-style-content'>Name </FormLabel>
           <FormControl type="text" placeholder="Name" value={newName} onChange={props.newNameMethod} className="mr-sm-2" />
@@ -20,9 +19,9 @@ const InsertPeople = (props) => {
           <FormControl type="number" placeholder="Number of entries" className="mr-sm-2" value={newNumber} onChange={props.newNumberMethod} />
         </FormGroup>
         <FormGroup controlId="formButton">
-          <Button type='submit' variant="info" onClick={handleSubmit}>Add</Button>
+          <Button type="submit" variant="info">Add</Button>
         </FormGroup>
-      </Form>
+      </form>
     </div>
 /*    <div>
     <InsertPeopleForm name={name} number={number}
