@@ -1,26 +1,25 @@
-import React from 'react'
 import '../Styles/styles.css'
-import Person from '../Components/Person'
-import { Navbar, Nav, NavLink, NavItem, NavDropdown, MenuItem, Form, Button, FormControl, FormLabel, FormGroup} from 'react-bootstrap'
+import { Form, Button, FormControl, FormLabel, FormGroup} from 'react-bootstrap'
 
 const InsertPeopleForm = (props) => {
 
   const newNumber = props.newNumber
   const newName = props.newName
+  const handleSubmit = props.handleSubmit
 
   return (
     <div>
-    <Form inline>
-      <FormGroup controlId="formName">
+    <Form>
+      <FormGroup controlId="newName">
         <FormLabel className='text-style-content'>Name </FormLabel>
-        <FormControl type="text" placeholder="Name" className="mr-sm-2" />
+        <FormControl type="text" placeholder="Name" value={newName} onChange={props.newNameMethod} className="mr-sm-2" />
       </FormGroup>
-      <FormGroup controlId="formNumber">
-        <FormLabel className='text-style-content'>Number of entries (optional)</FormLabel> <br />
-        <FormControl type="text" placeholder="Number of entries" className="mr-sm-2" />
+      <FormGroup controlId="newNumber">
+        <FormLabel className='text-style-content'>Number of entries (optional)</FormLabel>
+        <FormControl type="number" placeholder="Number of entries" className="mr-sm-2" value={newNumber} onChange={props.newNumberMethod} />
       </FormGroup>
       <FormGroup controlId="formButton">
-        <Button color="rgba(255, 255, 255)">Add</Button>
+        <Button type='submit' variant="info" onClick={handleSubmit}>Add</Button>
       </FormGroup>
     </Form>
     </div>

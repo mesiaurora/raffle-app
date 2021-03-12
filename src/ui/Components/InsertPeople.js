@@ -1,17 +1,18 @@
-import React, { useState, useEffect }  from 'react'
-import '../Styles/styles.css'
-import Person from '../Components/Person'
-import AddedPeople from '../Components/AddedPeople'
 import InsertPeopleForm from '../Components/InsertPeopleForm'
 
-const InsertPeople = () => {
+const InsertPeople = (props) => {
 
-
+  const name = props.name
+  const number = props.number
+  const handleSubmit = props.handleSubmit
 
   return (
     <div>
 
-    <InsertPeopleForm />
+    <InsertPeopleForm name={name} number={number}
+    newNameMethod={props.newNumberMethod}
+    newNumberMethod={props.newNameMethod}
+    onSubmit={handleSubmit}/>
 
     </div>
   )

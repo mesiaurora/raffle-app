@@ -1,7 +1,10 @@
-import { Navbar, Nav, NavLink, NavItem, NavDropdown, MenuItem, Form, Button, FormControl} from 'react-bootstrap';
-import { Link } from "react-router-dom";
-import { SocialIcon } from 'react-social-icons';
+import { Navbar, Nav, Form, Button, FormControl} from 'react-bootstrap';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import '../Styles/styles.css'
+import AboutKea from '../Components/AboutKea';
+import Results from '../Components/Results';
+import SetUpRaffle from '../Components/SetUpRaffle';
+
 
 const Header = () => {
 
@@ -11,17 +14,14 @@ const Header = () => {
       <Navbar variant="dark">
         <Nav defaultActiveKey="/" className="m-auto">
         <Nav.Item>
-          <Nav.Link href="/">Kea Mesi</Nav.Link>
+          <Nav.Link href="/">Raffle App</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-
-          </Nav.Item>
-          <Nav.Item>
-
-          </Nav.Item>
-          <Nav.Item>
-
-          </Nav.Item>
+          <Nav.Link href="/AboutKea">Raffle App</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/Results">Raffle App</Nav.Link>
+        </Nav.Item>
         </Nav>
 
         <Nav className="ml-auto">
@@ -29,17 +29,8 @@ const Header = () => {
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
             <Button variant="info">Search</Button>
           </Form>
-
-          <Nav.Item>
-            <Nav.Link href="#linkedIn"><SocialIcon url="http://linkedin.com/in/kea-tossavainen-645a1632/"/></Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href="#gitHub"><SocialIcon url="http://github.com/mesiaurora" /></Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href="#blogger"><SocialIcon url="http://keamesi.blogspot.com/" /></Nav.Link>
-          </Nav.Item>
         </Nav>
+
       </Navbar>
     </div>
   )

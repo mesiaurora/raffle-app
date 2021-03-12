@@ -1,6 +1,5 @@
 import React from 'react'
-import { Navbar, Nav, NavLink, NavItem, NavDropdown, MenuItem, Form, Button, FormControl, Container} from 'react-bootstrap';
-import { Link } from "react-router-dom";
+import { Navbar, Nav} from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
 
 const Footer = () => {

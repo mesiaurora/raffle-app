@@ -5,6 +5,10 @@ import Footer from './PageComponents/Footer';
 import InsertPeople from './Components/InsertPeople';
 import Submit from './Components/Submit';
 import AddedPeople from './Components/AddedPeople';
+import SetUpRaffle from './Components/SetUpRaffle';
+import RaffleSettings from './Components/RaffleSettings';
+import AboutKea from './Components/AboutKea';
+import Results from './Components/Results';
 import './Styles/styles.css';
 import bootstrap from "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav, NavLink, NavItem, NavDropdown, MenuItem, Form, Button, FormControl, FormLabel, FormGroup, Container, Col, Row} from 'react-bootstrap'
@@ -47,15 +51,33 @@ function App() {
 
   return (
     <div className='container'>
+
     <Container>
+    <BrowserRouter>
+    <Header />
     <Row>
-      <BrowserRouter>
+
+
         <div>
-        <Switch>
 
-        </Switch>
 
-        </div></BrowserRouter>
+        </div>
+
+        <Col sm={6}>
+
+        <h2>Add new person and number of entries</h2>
+        <RaffleSettings />
+
+        </Col>
+
+      </Row>
+    <Row>
+
+
+        <div>
+
+
+        </div>
 
         <Col sm={6}>
 
@@ -74,6 +96,7 @@ function App() {
         <Submit />
         </Col>
       </Row>
+      </BrowserRouter>
       </Container>
       <Footer />
     </div>
