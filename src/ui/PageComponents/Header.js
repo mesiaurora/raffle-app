@@ -1,9 +1,6 @@
-import { Navbar, Nav, Form, Button, FormControl} from 'react-bootstrap';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Navbar, Nav, NavLink, Form, Button, FormControl } from 'react-bootstrap';
 import '../Styles/styles.css'
-import AboutKea from '../Components/AboutKea';
-import Results from '../Components/Results';
-import SetUpRaffle from '../Components/SetUpRaffle';
+
 
 
 const Header = () => {
@@ -14,13 +11,13 @@ const Header = () => {
       <Navbar variant="dark">
         <Nav defaultActiveKey="/" className="m-auto">
         <Nav.Item>
-          <Nav.Link href="/">Raffle App</Nav.Link>
+          <NavLink href="/">Raffle App</NavLink>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/AboutKea">Raffle App</Nav.Link>
+          <Nav.Link href="aboutKea">About creator</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/Results">Raffle App</Nav.Link>
+          <Nav.Link href="results">Results</Nav.Link>
         </Nav.Item>
         </Nav>
 
@@ -30,8 +27,8 @@ const Header = () => {
             <Button variant="info">Search</Button>
           </Form>
         </Nav>
-
       </Navbar>
+
     </div>
   )
 }
