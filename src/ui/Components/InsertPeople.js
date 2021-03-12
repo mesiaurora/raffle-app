@@ -9,6 +9,7 @@ const InsertPeople = (props) => {
 
   return (
     <div>
+      <h3>Add a new person</h3>
       <form onSubmit={handleSubmit}>
         <FormGroup controlId="newName">
           <FormLabel className='text-style-content'>Name </FormLabel>
@@ -23,12 +24,6 @@ const InsertPeople = (props) => {
         </FormGroup>
       </form>
     </div>
-/*    <div>
-    <InsertPeopleForm name={name} number={number}
-    newNameMethod={props.newNumberMethod}
-    newNumberMethod={props.newNameMethod}
-    onSubmit={handleSubmit}/>
-    </div>*/
   )
 }
 
