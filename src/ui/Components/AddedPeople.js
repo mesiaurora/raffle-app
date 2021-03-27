@@ -6,7 +6,10 @@ const AddedPeople = (props) => {
 
   const persons = props.persons
 
-  /* TODO: Maximum height for the list of people */
+  /* TODO: Maximum height for the list of people
+    TODO: create a table to hold people
+    */
+
 
   return (
     <div>
